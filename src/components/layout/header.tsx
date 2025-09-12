@@ -20,9 +20,9 @@ export default function Header() {
             </div>
             <Sheet>
                 <SheetTrigger>
-                    <Button>
+                    <span>
                         Open
-                    </Button>
+                    </span>
                 </SheetTrigger>
                 <SheetContent className='bg-zinc-900'>
                     <SheetTitle className="py-2 px-3">What would you like to know?</SheetTitle>
