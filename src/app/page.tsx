@@ -4,6 +4,8 @@ import Hero from "@/components/homepage/hero";
 import Services from "@/components/homepage/services";
 import Technologies from "@/components/homepage/technologies";
 import About from "@/components/homepage/about";
+import Contact from "@/components/homepage/contact";
+import Footer from "@/components/layout/footer";
 
 export default function Home() {
   return (
@@ -14,9 +16,10 @@ export default function Home() {
         <Services />
         <Technologies />
         <About />
+        <Contact />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center mt-[130px] border-t border-white w-full">
+        <Footer/>
       </footer>
     </div>
   );
