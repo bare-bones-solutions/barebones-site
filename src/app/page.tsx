@@ -3,6 +3,7 @@ import Header from "@/components/layout/header";
 import Hero from "@/components/homepage/hero";
 import Services from "@/components/homepage/services";
 import Technologies from "@/components/homepage/technologies";
+import About from "@/components/homepage/about";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Technologies />
+        <About />
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
 
