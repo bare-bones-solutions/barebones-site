@@ -2,8 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function About() {
     return (
-        <div className="mt-[82px] px-5 text-center">
-            <Card>
+        <div className="container mx-auto mt-[82px] px-5  text-center">
+            <Card className="flex flex-col max-w-[700px] mx-auto">
                 <CardHeader>
                     <CardTitle>
                         <h3 className="text-2xl text-center">
