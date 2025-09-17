@@ -31,7 +31,7 @@ export default function Technologies() {
     return (
         <div className="mt-[82px] flex flex-col px-5 text-center">
             <div className="mb-[24px]">
-                <h2 className="text-2xl font-bold">Technologies We Love</h2>
+                <h2 className="">Technologies We Love</h2>
             </div>
             <div className="flex flex-row flex-wrap items-center justify-center gap-[16px] container">
             {

@@ -6,9 +6,9 @@ export default function About() {
             <Card className="flex flex-col max-w-[700px] mx-auto">
                 <CardHeader>
                     <CardTitle>
-                        <h3 className="text-2xl text-center">
+                        <h2 className="text-center">
                             About Bare Bone Solutions
-                        </h3>
+                        </h2>
                     </CardTitle>
                 </CardHeader>
                 <CardContent style={{ marginTop: "20px" }}>

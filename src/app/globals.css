@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jacquard+24&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=VT323&display=swap");
+
 @import "tailwindcss";
 @import "tw-animate-css";
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -118,13 +123,44 @@
     @apply border-border outline-ring/50;
 
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Space Grotesk";
+
+  }
+
+  h1 {
+    font-weight: 700
+  }
+
+  h2,
+  h3 {
+    font-weight: 300
+  }
+
+
+  main h3 {
+    
+    font-size: 20px;
+
+  }
+
+  main h2 {
+    font-size: 32px;
+  }
+
+  main p {
+    font-family: "JetBrains Mono", monospace, "SF Mono";
+    font-weight: 300;
+  }
 }
 
-@layer components {
-
-}
+@layer components {}
 
 @layer utilities {}
