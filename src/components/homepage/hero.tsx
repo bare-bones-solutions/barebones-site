@@ -1,9 +1,15 @@
+"use client";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button"
-
 
 export default function Hero() {
     return (
-        <div className="max-w-3xl mt-[204px] px-5 flex flex-col items-center justify-around h-[300px]">
+        <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className="max-w-3xl mt-[204px] px-5 flex flex-col items-center justify-around h-[300px]"
+        >
             <div className="flex flex-col items-center font-bold">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl">Software Solutions</h1>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl">Without the Bloat</h1>
@@ -17,6 +23,6 @@ export default function Hero() {
                 <Button>Start Your Project</Button>
                 <Button>View Our Work</Button>
             </div>
-        </div>
+        </motion.div>
     );
 }

@@ -14,8 +14,17 @@ import {
 
 export default function Header() {
     return (
-        <header className="sticky top-0 box-border flex flex-row items-center justify-between p-4 w-full text-white max-w-[1200px]">
-            <nav className='container mx-auto flex items-center justify-between h-16'>
+        <header className="
+                            sticky top-0 box-border flex 
+                            flex-row items-center justify-between 
+                            p-5 w-full
+                            text-white max-w-[1200px] z-10
+                            F">
+            <nav className='container mx-auto 
+                            flex items-center 
+                            justify-between h-16 
+                            px-4 rounded-lg
+                            bg-card/90 border border-white/15 shadow-sm  backdrop-blur-sm'>
                 <div>
                     <div>Bare Bone Solutions</div>
                 </div>
