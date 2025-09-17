@@ -9,7 +9,7 @@ import Footer from "@/components/layout/footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center font-mono h-full min-h-screen overflow-hidden max-w-screen text-white relative bg-zinc-950">
+    <div className="flex flex-col items-center font-mono h-full min-h-screen  max-w-screen text-white relative bg-zinc-950">
       <Header />
       <main className="flex flex-col gap-[32px] row-start-2 items-center w-full">
         <Hero />
