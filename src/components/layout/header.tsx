@@ -15,7 +15,7 @@ import {
 export default function Header() {
     return (
         <header className="
-                            sticky top-0 box-border flex 
+                            top-0 box-border flex 
                             flex-row items-center justify-between 
                             p-5 w-full
                             text-white max-w-[1200px] z-10
@@ -28,7 +28,13 @@ export default function Header() {
                 <div>
                     <div>Bare Bone Solutions</div>
                 </div>
-                <Sheet>
+                <div className='flex-row gap-[16px] hidden sm:flex'>
+                    <Link href="#services">Services</Link>
+                    <Link href="#technologies">Technologies</Link>
+                    <Link href="#about">About</Link>
+                    <Link href="#contact">Contact</Link>
+                </div>
+                {/* <Sheet>
                     <SheetTrigger>
                         <span>
                             Open
@@ -43,7 +49,7 @@ export default function Header() {
                             <Link className='' href="#services">Contact Us</Link>
                         </div>
                     </SheetContent>
-                </Sheet>
+                </Sheet> */}
             </nav>
         </header>
     )

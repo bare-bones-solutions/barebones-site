@@ -1,19 +1,10 @@
-"use client";
-import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-
-const MotionCard = motion(Card);
 
 export default function About() {
     return (
-        <div className="container mx-auto mt-[82px] px-5 text-center">
-            <div className="h-full flex flex-col">
-                <MotionCard
-                    whileHover={{ scale: 1.04, boxShadow: "0 8px 32px rgba(0,0,0,0.15)" }}
-                    whileTap={{ scale: 0.98 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="flex flex-col max-w-3xl mx-auto relative overflow-hidden pixelated-texture"
-                >
+        <div className="container mx-auto mt-[82px] px-5  text-center">
+            
+                <Card className="flex flex-col max-w-3xl mx-auto relative overflow-hidden pixelated-texture">
                     <CardHeader>
                         <CardTitle>
                             <h2 className="text-center">
@@ -31,8 +22,7 @@ export default function About() {
                             </p>
                         </div>
                     </CardContent>
-                </MotionCard>
-            </div>
+                </Card>
         </div>
     )
 }
