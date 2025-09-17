@@ -43,7 +43,8 @@ export default function Services() {
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                 className="h-full flex flex-col"
                             >
-                                <Card className="h-full flex flex-col">
+                                <Card className="h-full flex flex-col relative overflow-hidden pixelated-texture">
+                                {/* Pixelated overlay handled by .pixelated-texture::before in CSS */}
                                     <CardHeader>
                                         <CardTitle>
                                             <h3>
