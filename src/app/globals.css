@@ -51,38 +51,57 @@
 
 
 :root {
+
+  /* Bone Color Scheme - Dark Mode*/
   --radius: 0.625rem;
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.92 0.004 286.32);
-  --primary-foreground: oklch(0.21 0.006 285.885);
-  --secondary: oklch(0.274 0.006 286.033);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.552 0.016 285.938);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.552 0.016 285.938);
+  --background: #1a1815;
+  --foreground: #f0ede7;
+  --card: rgba(26, 24, 21, 0.95);
+  --card-foreground: #f0ede7;
+  --popover: #2c2926;
+  --popover-foreground: #f0ede7;
+  --primary: #f0ede7;
+  --primary-foreground: #1a1815;
+  --secondary: #2c2926;
+  --secondary-foreground: #f0ede7;
+  --muted: #3d3a35;
+  --muted-foreground: #a59688;
+  --accent: #3d3a35;
+  --accent-foreground: #f0ede7;
+  --destructive: #c47575;
+  --destructive-foreground: #1a1815;
+  --border: rgba(240, 237, 231, 0.12);
+  --input: #3d3a35;
+  --ring: rgba(240, 237, 231, 0.3);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #8b8074;
+  --chart-2: #a59688;
+  --chart-3: #c4b8a8;
+  --chart-4: #6b6962;
+  --chart-5: #9c9085;
+  --sidebar: #1a1815;
+  --sidebar-foreground: #f0ede7;
+  --sidebar-primary: #8b8074;
+  --sidebar-primary-foreground: #1a1815;
+  --sidebar-accent: #2c2926;
+  --sidebar-accent-foreground: #f0ede7;
+  --sidebar-border: rgba(240, 237, 231, 0.08);
+  --sidebar-ring: rgba(240, 237, 231, 0.3);
+
+  /* Bone-themed accent colors */
+  --bone-warm: #c4b8a8;
+  --bone-light: rgba(196, 184, 168, 0.15);
+  --bone-subtle: rgba(196, 184, 168, 0.3);
+  --bone-accent: rgba(196, 184, 168, 0.5);
+  --earth: #8b8074;
+  --earth-light: rgba(139, 128, 116, 0.15);
+  --earth-subtle: rgba(139, 128, 116, 0.3);
+  --earth-accent: rgba(139, 128, 116, 0.5);
+  --glass-bg: rgba(26, 24, 21, 0.7);
+  --glass-border: rgba(240, 237, 231, 0.1);
+  --warm-highlight: #a59688;
+  --warm-glow: rgba(165, 150, 136, 0.3);
 }
 
 .basic {
@@ -143,7 +162,7 @@
   h2,
   h3 {
     font-family: "Space Grotesk";
-
+    color: var(--primary)
   }
 
   h1 {
@@ -183,12 +202,12 @@
     bottom: 0;
     background-image: radial-gradient(
         circle at 25% 25%,
-        rgba(255, 102, 204, 0.1) 1px,
+        var(--primary-foreground),
         transparent 1px
       ),
       radial-gradient(
         circle at 75% 75%,
-        rgba(0, 255, 255, 0.1) 1px,
+         var(--secondary),
         transparent 1px
       );
     background-size:
