@@ -173,6 +173,13 @@
     color: var(--bone-warm);
   }
 
+  
+
+  .secondary-button {
+  
+    border: 1px solid var(--input);
+  }
+
 
   h1 {
     font-weight: 700

@@ -29,16 +29,18 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-col justify-center gap-[14px] mt-[24px] sm:flex-row">
                     <MotionButton
-                        whileHover={{ scale: 1.06, boxShadow: "0 4px 16px rgba(0,0,0,0.10)" }}
-                        whileTap={{ scale: 0.96 }}
+                        whileHover={{ scale: 1.00, boxShadow: "0 4px 16px rgba(0,0,0,0.10)" }}
+                        whileTap={{ scale: 1.00 }}
                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     >
                         Start Your Project
                     </MotionButton>
                     <MotionButton
-                        whileHover={{ scale: 1.06, boxShadow: "0 4px 16px rgba(0,0,0,0.10)" }}
-                        whileTap={{ scale: 0.96 }}
+                        variant="secondary"
+                        whileHover={{ scale: 1.00, boxShadow: "0 4px 16px rgba(0,0,0,0.10)" }}
+                        whileTap={{ scale: 1.00 }}
                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                        className="secondary-button"
                     >
                         View Our Work
                     </MotionButton>
