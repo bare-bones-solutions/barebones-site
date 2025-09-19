@@ -22,7 +22,7 @@ export default function Services() {
     return (
         <div className="text-white px-5 flex flex-col items-center justify-center">
             <div className="w-full flex flex-col items-center text-center mt-[82px] mb-[56px]">
-                <h2 className="sm:text-3xl md:text-4xl mb-[16px]">Our Services</h2>
+                <h2 className="sm:text-3xl md:text-4xl mb-[16px] font-bold ">Our Services</h2>
                 <p>Comprehensive software development services tailored to your needs</p>
             </div>
             <div className="w-full flex flex-wrap gap-6 items-stretch  container mx-auto">
