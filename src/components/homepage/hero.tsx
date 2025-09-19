@@ -7,7 +7,7 @@ const MotionButton = motion(Button);
 
 export default function Hero() {
     return (
-        <div className="relative max-w-3xl mx-auto px-5 flex flex-col items-center justify-around h-[300px] mt-[256px]">
+        <div className="relative max-w-3xl mx-auto px-5 flex flex-col items-center justify-around h-[300px] mt-[124px]">
             {/* Pixel cube: half in margin, half behind hero */}
             <div className="absolute left-1/2 -top-24 -translate-x-1/2 z-0">
                 {/* <PixelCube /> */}
