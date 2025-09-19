@@ -19,8 +19,8 @@ export default function Hero() {
                 className="relative z-10 flex flex-col items-center justify-around h-full w-full"
             >
                 <div className="flex flex-col items-center font-bold">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl">Software Solutions</h1>
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl">Without the Bloat</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl primary-header">Software Solutions</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl accent-header">Without the Bloat</h1>
                 </div>
                 <div className="flex flex-col items-center justify-center">
                     <p className="text-center max-w-[700px] sm:text-lg">

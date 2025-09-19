@@ -151,19 +151,28 @@
 
   nav {
     background-color: var(--card);
-  } 
+  }
 
   main {
-    max-width:  1200px;
+    max-width: 1200px;
     box-sizing: border-box;
-  } 
+  }
 
   h1,
   h2,
   h3 {
     font-family: "Space Grotesk";
-    color: var(--primary)
+    color: var(--primary);
   }
+
+  .accent-header {
+    color: var(--earth);
+  }
+  
+  .primary-header {
+    color: var(--bone-warm);
+  }
+
 
   h1 {
     font-weight: 700
@@ -176,7 +185,7 @@
 
 
   main h3 {
-    
+
     font-size: 20px;
 
   }
@@ -197,6 +206,7 @@
 }
 
 @layer components {
+
   /* Pixelated texture overlay */
   .pixelated-texture::before {
     content: "";
@@ -205,16 +215,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: radial-gradient(
-        circle at 25% 25%,
+    background-image: radial-gradient(circle at 25% 25%,
         var(--primary-foreground),
-        transparent 1px
-      ),
-      radial-gradient(
-        circle at 75% 75%,
-         var(--secondary),
-        transparent 1px
-      );
+        transparent 1px),
+      radial-gradient(circle at 75% 75%,
+        var(--secondary),
+        transparent 1px);
     background-size:
       10px 10px,
       8px 8px;
