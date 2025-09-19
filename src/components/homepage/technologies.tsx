@@ -39,6 +39,7 @@ export default function Technologies() {
                         whileHover={{ scale: 1.08, boxShadow: "0 4px 16px rgba(0,0,0,0.10)" }}
                         whileTap={{ scale: 0.96 }}
                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                        className="rounded-xl"
                     >
                         <span className="py-2 px-3 text-[16px]">
                             {b.title}
