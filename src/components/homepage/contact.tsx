@@ -7,7 +7,7 @@ export default function Contact() {
                 <h2 className="">Read to Get Started?</h2>
                 <p>Let's discuss your project and build something amazing together.</p>
                 <div>
-                    <Button>Get in Touch</Button>
+                    <Button className="hover:text-warm-highlight hover:transition-colors">Get in Touch</Button>
                 </div>
             </div>
         </div>
