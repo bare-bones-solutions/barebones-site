@@ -72,8 +72,8 @@ export default function Services() {
                                             <CardTitle>
                                                 <div className="flex flex-col w-full">
 
-                                                    <div className="p-4 border w-fit h-fit rounded-xl mb-4">
-                                                        <Icon className="" />
+                                                    <div className="p-4 border w-fit h-fit rounded-xl mb-4 bg-background z-10">
+                                                        <Icon className="" color="#f0ede71f" />
                                                     </div>
 
                                                     <h3>

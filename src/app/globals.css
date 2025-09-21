@@ -144,7 +144,6 @@
     @apply border-border outline-ring/50;
 
   }
-
   body {
     @apply bg-background text-foreground;
   }
@@ -163,6 +162,11 @@
   h3 {
     font-family: "Space Grotesk";
     color: var(--primary);
+  }
+
+  .lucide {
+    
+    
   }
 
   .accent-header {
@@ -225,16 +229,16 @@
     right: 0;
     bottom: 0;
     background-image: radial-gradient(circle at 25% 25%,
-        var(--primary-foreground),
+        var(--warm-highlight),
         transparent 1px),
       radial-gradient(circle at 75% 75%,
-        var(--secondary),
+        var(--bone-subtle),
         transparent 1px);
     background-size:
       10px 10px,
       8px 8px;
     pointer-events: none;
-    opacity: 0.6;
+    opacity: 0.09;
   }
 }
 
