@@ -72,7 +72,9 @@ export default function Services() {
                                             <CardTitle>
                                                 <div className="flex flex-col w-full">
 
-                                                    <Icon />
+                                                    <div className="p-4 border w-fit h-fit rounded-xl mb-4">
+                                                        <Icon className="" />
+                                                    </div>
 
                                                     <h3>
                                                         {s.title}
