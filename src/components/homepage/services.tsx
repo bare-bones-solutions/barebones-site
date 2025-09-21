@@ -66,17 +66,23 @@ export default function Services() {
                                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                     className="h-full flex flex-col"
                                 >
-                                    <Card className="h-full flex flex-col relative overflow-hidden pixelated-texture">
+                                    <Card className="h-full flex flex-col relative overflow-hidden pixelated-texture  group hover:border-primary
+                                    ">
                                         {/* Pixelated overlay handled by .pixelated-texture::before in CSS */}
                                         <CardHeader>
                                             <CardTitle>
                                                 <div className="flex flex-col w-full">
 
-                                                    <div className="p-4 border w-fit h-fit rounded-xl mb-4 bg-background z-10">
-                                                        <Icon className="" color="#f0ede71f" />
+                                                    <div className="   p-4 border w-fit h-fit rounded-xl mb-4
+                                                            bg-background z-10
+                                                            text-border
+                                                            transition-colors
+                                                            group-hover:text-primary
+                                                            group-hover:border-primary">
+                                                        <Icon />
                                                     </div>
 
-                                                    <h3>
+                                                    <h3 className="text-earth group-hover:text-primary">
                                                         {s.title}
                                                     </h3>
                                                 </div>

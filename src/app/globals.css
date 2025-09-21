@@ -66,8 +66,10 @@
   --secondary-foreground: #f0ede7;
   --muted: #3d3a35;
   --muted-foreground: #a59688;
-  --accent: #3d3a35;
-  --accent-foreground: #f0ede7;
+  --accent: var(--bone-light);
+  /* was: #3d3a35 */
+  --accent-foreground: var(--foreground);
+  /* was: #f0ede7 */
   --destructive: #c47575;
   --destructive-foreground: #1a1815;
   --border: rgba(240, 237, 231, 0.12);
@@ -138,18 +140,31 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
 }
 
+@theme inline {
+  --color-bone-warm: var(--bone-warm);
+  --color-bone-light: var(--bone-light);
+  --color-earth: var(--earth);
+  --color-primary: var(--primary);
+}
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    /* @apply border-border outline-ring/50; */
+    border-color: var(--border);
 
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
   nav {
     background-color: var(--card);
+  }
+
+  nav a:hover {
+    color: var(--bone-warm);
+    transition: color 0.2s;
   }
 
   main {
@@ -165,22 +180,22 @@
   }
 
   .lucide {
-    
-    
+    color: (--border);
+
   }
 
   .accent-header {
     color: var(--earth);
   }
-  
+
   .primary-header {
     color: var(--bone-warm);
   }
 
-  
+
 
   .secondary-button {
-  
+
     border: 1px solid var(--input);
   }
 

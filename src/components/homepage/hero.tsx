@@ -29,20 +29,33 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-col justify-center gap-[14px] mt-[24px] sm:flex-row">
                     <MotionButton
-                        whileHover={{ scale: 1.00, boxShadow: "0 4px 16px rgba(0,0,0,0.10)" }}
-                        whileTap={{ scale: 1.00 }}
-                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    whileHover={{ 
+                        scale: 1.05, 
+                        boxShadow: "0 2px 8px rgba(196, 184, 168, 0.2)",
+                        backgroundColor: "var(--bone-warm)",
+                        color: "var(--background)",
+                        border: "2px solid var(--bone-warm)"
+                    }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     >
-                        Start Your Project
+                    Start Your Project
                     </MotionButton>
                     <MotionButton
-                        variant="secondary"
-                        whileHover={{ scale: 1.00, boxShadow: "0 4px 16px rgba(0,0,0,0.10)" }}
-                        whileTap={{ scale: 1.00 }}
-                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                        className="secondary-button"
+                    variant="secondary"
+                    whileHover={{ 
+                        scale: 1.03, 
+                        boxShadow: "0 1px 4px rgba(0, 0, 0, 0.1)",
+                        backgroundColor: "var(--bone-light)",
+                        borderColor: "var(--bone-warm)",
+                        borderWidth: "2px",
+                        color: "var(--bone-warm)"
+                    }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    className="secondary-button"
                     >
-                        View Our Work
+                    View Our Work
                     </MotionButton>
                 </div>
             </motion.div>
