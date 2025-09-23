@@ -37,7 +37,7 @@ export default function Hero() {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                     <p className="text-center max-w-[700px] sm:text-lg">
-                        We strip away the unnecessary to deliver clean, efficient, and powerful software solutions. From concept to deployment, we focus on what matters most - functionality that works.
+                        From skeleton to scale, we deliver efficient, effective solutions. Crepitus is for bones; your business deserves harmony.
                     </p>
                 </div>
                 <div className="flex flex-col justify-center gap-[14px] mt-[24px] sm:flex-row">
@@ -52,7 +52,7 @@ export default function Hero() {
                         whileTap={{ scale: 0.98 }}
                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     >
-                        Start Your Project
+                        Start Your Breakthrough
                     </MotionButton>
                     <MotionButton
                         variant="secondary"
@@ -68,7 +68,7 @@ export default function Hero() {
                         transition={{ type: "spring", stiffness: 300, damping: 20 }}
                         className="secondary-button"
                     >
-                        View Our Work
+                        Our Work
                     </MotionButton>
                 </div>
             </motion.div>
