@@ -10,32 +10,27 @@ import {
 } from "@/components/ui/card"
 
 import {
-    ArrowRight,
-    Zap,
-    Brain,
-    BrainCircuit,
-    Users,
     Code,
     Database,
-    Gauge,
-    Smartphone,
-    Globe,
-    Server
+    Server,
+    ChartNoAxesCombined,
+    Target,
+    Store
 } from "lucide-react"
 
 const MotionBadge = motion(Badge)
 
 const services = [
+    { title: "Full Stack Web Development", description: "From skeleton to scale — modern, responsive websites engineered for speed, security, and seamless user experience.", icon: Code },
+    { title: "E-commerce Solutions", description: "Friction-free online storefronts — optimized for performance, built to handle scale, and designed to convert.", icon: Store },
+    { title: "Web Services", description: "Scalable server architectures and database systems — the structural framework your business can rely on.", icon: Server },
+    { title: "Marketing Solutions", description: "Build campaigns with backbone — from strategy to execution, we craft digital marketing that cuts through noise and drives growth.", icon: Target },
+    { title: "Digital Reporting", description: "Clear insights with structure — transform raw data into reports that inform, align, and drive decisions.", icon: ChartNoAxesCombined },
     {
-        title: "Custom Software Development",
-        description: "Tailored solutions built from the ground up to meet your specific business needs.",
+        title: "Technical Consulting",
+        description: "Guidance with backbone — expert advice to simplify complexity, align strategy, and ensure lasting impact.",
         icon: Database
     },
-    { title: "Mobile App Development", description: "Native and cross-platform mobile applications for iOS and Android.", icon: Code },
-    { title: "Web Development", description: "Modern, responsive web applications using cutting-edge technologies.", icon: Smartphone },
-    { title: "Backend Systems", description: "Scalable server architectures and database solutions for your applications.", icon: Globe },
-    { title: "Performance Optimizations", description: "Speed up your existing applications and improve user experience.", icon: Server },
-    { title: "Technical Consulting", description: "Expert guidance on technology decisions and architecture planning.", icon: Gauge },
 ];
 
 export default function Services() {
